@@ -7,6 +7,15 @@ GIT
       spree_core (>= 0.70.1)
 
 GIT
+  remote: git://github.com/spree/spree_static_content.git
+  revision: 16e40ef6501d74398b6929b30c56337ebe262913
+  specs:
+    spree_static_content (1.0.0)
+      formtastic
+      spree_auth (>= 1.0.0.beta)
+      spree_core (>= 1.0.0.beta)
+
+GIT
   remote: git://github.com/spree/spree_usa_epay.git
   revision: 0cb57b4afbf1eef6a0ad67a4a1ea506c6418fde1
   ref: 0cb57b4afbf1eef6a0ad67a4a1ea506c6418fde1
@@ -86,6 +95,8 @@ GEM
     execjs (1.3.0)
       multi_json (~> 1.0)
     ffaker (1.12.1)
+    formtastic (2.0.2)
+      rails (~> 3.0)
     gyoku (0.4.4)
       builder (>= 2.1.2)
     highline (1.6.8)
@@ -202,6 +213,8 @@ GEM
       stringex (~> 1.3.0)
     spree_dash (1.0.0)
       spree_core (= 1.0.0)
+    spree_editor (0.50.1)
+      spree_core (>= 0.40.0)
     spree_promo (1.0.0)
       spree_auth (= 1.0.0)
       spree_core (= 1.0.0)
@@ -239,7 +252,9 @@ DEPENDENCIES
   rails (= 3.1.3)
   sass-rails (~> 3.1.5)
   spree
+  spree_editor
   spree_skrill!
+  spree_static_content!
   spree_usa_epay!
   sqlite3
   turn (~> 0.8.3)
