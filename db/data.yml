@@ -1,0 +1,474 @@
+
+---
+spree_option_types:
+  columns:
+  - id
+  - name
+  - presentation
+  - created_at
+  - updated_at
+  - position
+  records: 
+  - - 1
+    - dish_color
+    - Color
+    - '2011-11-16 07:36:00.957769'
+    - '2011-11-16 07:36:00.957769'
+    - 0
+
+---
+spree_option_types_prototypes:
+  columns:
+  - prototype_id
+  - option_type_id
+  records: 
+  - - 1
+    - 1
+
+---
+spree_option_values:
+  columns:
+  - id
+  - option_type_id
+  - name
+  - position
+  - presentation
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - 1
+    - red
+    - 1
+    - Red
+    - '2011-11-16 07:36:27.629208'
+    - '2011-11-16 07:36:27.629208'
+  - - 2
+    - 1
+    - black
+    - 2
+    - Black
+    - '2011-11-16 07:36:27.630938'
+    - '2011-11-16 07:36:27.630938'
+
+---
+spree_product_option_types:
+  columns:
+  - id
+  - product_id
+  - option_type_id
+  - position
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - 1
+    - 1
+    - 1
+    - '2011-11-16 07:45:48.331845'
+    - '2011-11-16 07:45:48.331845'
+  - - 2
+    - 2
+    - 1
+    - 1
+    - '2011-11-16 07:47:01.418926'
+    - '2011-11-16 07:47:01.418926'
+  - - 3
+    - 4
+    - 1
+    - 1
+    - '2011-11-16 07:48:34.379619'
+    - '2011-11-16 07:48:34.379619'
+  - - 4
+    - 3
+    - 1
+    - 1
+    - '2011-11-16 07:49:06.516565'
+    - '2011-11-16 07:49:06.516565'
+
+---
+spree_product_properties:
+  columns:
+  - id
+  - product_id
+  - property_id
+  - value
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - 1
+    - 7
+    - ''
+    - '2011-11-16 07:45:48.199608'
+    - '2011-11-17 01:52:42.181795'
+  - - 2
+    - 1
+    - 5
+    - ''
+    - '2011-11-16 07:45:48.201393'
+    - '2011-11-17 01:52:42.183118'
+  - - 3
+    - 1
+    - 6
+    - ''
+    - '2011-11-16 07:45:48.202657'
+    - '2011-11-17 01:52:42.183806'
+  - - 7
+    - 1
+    - 8
+    - ''
+    - '2011-11-16 07:45:48.207675'
+    - '2011-11-17 01:52:42.184483'
+  - - 8
+    - 2
+    - 7
+    - ''
+    - '2011-11-16 07:47:01.300188'
+    - '2011-11-17 01:53:20.009465'
+  - - 9
+    - 2
+    - 5
+    - ''
+    - '2011-11-16 07:47:01.301838'
+    - '2011-11-17 01:53:20.010431'
+  - - 10
+    - 2
+    - 6
+    - ''
+    - '2011-11-16 07:47:01.303071'
+    - '2011-11-17 01:53:20.011125'
+  - - 14
+    - 2
+    - 8
+    - ''
+    - '2011-11-16 07:47:01.307795'
+    - '2011-11-17 01:53:20.011827'
+  - - 15
+    - 4
+    - 7
+    - ''
+    - '2011-11-16 07:48:34.336894'
+    - '2011-11-17 01:54:59.005330'
+  - - 16
+    - 4
+    - 5
+    - ''
+    - '2011-11-16 07:48:34.338681'
+    - '2011-11-17 01:54:59.006236'
+  - - 17
+    - 4
+    - 6
+    - ''
+    - '2011-11-16 07:48:34.339958'
+    - '2011-11-17 01:54:59.006956'
+  - - 21
+    - 4
+    - 8
+    - ''
+    - '2011-11-16 07:48:34.344867'
+    - '2011-11-17 01:54:59.007654'
+  - - 22
+    - 1
+    - 9
+    - ''
+    - '2011-11-17 01:52:42.185203'
+    - '2011-11-17 01:52:42.185203'
+  - - 23
+    - 2
+    - 9
+    - ''
+    - '2011-11-17 01:53:20.012553'
+    - '2011-11-17 01:53:20.012553'
+  - - 24
+    - 3
+    - 7
+    - ''
+    - '2011-11-17 01:53:47.327563'
+    - '2011-11-17 01:53:47.327563'
+  - - 25
+    - 3
+    - 5
+    - ''
+    - '2011-11-17 01:53:47.328743'
+    - '2011-11-17 01:53:47.328743'
+  - - 26
+    - 3
+    - 6
+    - ''
+    - '2011-11-17 01:53:47.329595'
+    - '2011-11-17 01:53:47.329595'
+  - - 27
+    - 3
+    - 8
+    - ''
+    - '2011-11-17 01:53:47.330401'
+    - '2011-11-17 01:53:47.330401'
+  - - 28
+    - 3
+    - 9
+    - ''
+    - '2011-11-17 01:53:47.331197'
+    - '2011-11-17 01:53:47.331197'
+  - - 29
+    - 4
+    - 9
+    - ''
+    - '2011-11-17 01:54:59.008380'
+    - '2011-11-17 01:54:59.008380'
+
+---
+spree_products:
+  columns:
+  - id
+  - name
+  - description
+  - created_at
+  - updated_at
+  - permalink
+  - available_on
+  - tax_category_id
+  - shipping_category_id
+  - deleted_at
+  - meta_description
+  - meta_keywords
+  - count_on_hand
+  records: 
+  - - 1
+    - Extra Small Dog Bowl
+    - ''
+    - '2011-11-16 07:45:47.996019'
+    - '2011-11-16 07:58:23.618692'
+    - extra-small-dog-bowl
+    - '2011-11-15 00:00:00.000000'
+    - !!null 
+    - !!null 
+    - !!null 
+    - ''
+    - ''
+    - 0
+  - - 2
+    - Small Dog Bowl
+    - ''
+    - '2011-11-16 07:47:01.173476'
+    - '2011-11-16 08:00:15.433471'
+    - small-dog-bowl
+    - '2011-11-15 00:00:00.000000'
+    - !!null 
+    - !!null 
+    - !!null 
+    - ''
+    - ''
+    - 0
+  - - 3
+    - Medium Dog Bowl
+    - ''
+    - '2011-11-16 07:47:34.679873'
+    - '2011-11-16 08:00:00.704659'
+    - medium-dog-bowl
+    - '2011-11-15 00:00:00.000000'
+    - !!null 
+    - !!null 
+    - !!null 
+    - ''
+    - ''
+    - 0
+  - - 4
+    - Large Dog Bowl
+    - ''
+    - '2011-11-16 07:48:34.208136'
+    - '2011-11-16 07:59:05.880061'
+    - large-dog-bowl
+    - '2011-11-15 00:00:00.000000'
+    - !!null 
+    - !!null 
+    - !!null 
+    - ''
+    - ''
+    - 0
+
+---
+spree_properties:
+  columns:
+  - id
+  - name
+  - presentation
+  - created_at
+  - updated_at
+  records: 
+  - - 5
+    - dogbowl_inner_length
+    - Inner Length
+    - '2011-11-16 07:43:36.302170'
+    - '2011-11-16 07:43:36.302170'
+  - - 6
+    - dogbowl_inner_width
+    - Inner Width
+    - '2011-11-16 07:44:03.984075'
+    - '2011-11-16 07:44:03.984075'
+  - - 7
+    - dogbowl_inner_depth
+    - Inner Depth
+    - '2011-11-16 07:44:24.095074'
+    - '2011-11-16 07:44:24.095074'
+  - - 8
+    - dogbowl_volume
+    - Volume
+    - '2011-11-16 07:44:46.309839'
+    - '2011-11-16 07:44:46.309839'
+  - - 9
+    - dogbowl_recommended_breed
+    - Recommended Breed
+    - '2011-11-17 01:51:39.287735'
+    - '2011-11-17 01:51:39.287735'
+
+---
+spree_properties_prototypes:
+  columns:
+  - prototype_id
+  - property_id
+  records: 
+  - - 1
+    - 7
+  - - 1
+    - 5
+  - - 1
+    - 6
+  - - 1
+    - 8
+  - - 1
+    - 9
+
+---
+spree_prototypes:
+  columns:
+  - id
+  - name
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - Dogbowl
+    - '2011-11-16 07:33:47.762304'
+    - '2011-11-16 07:33:47.762304'
+
+---
+spree_variants:
+  columns:
+  - id
+  - product_id
+  - sku
+  - price
+  - weight
+  - height
+  - width
+  - depth
+  - deleted_at
+  - is_master
+  - count_on_hand
+  - cost_price
+  - position
+  records: 
+  - - 1
+    - 1
+    - ''
+    - 12.95
+    - !!null 
+    - !!null 
+    - !!null 
+    - !!null 
+    - !!null 
+    - true
+    - 0
+    - !!null 
+    - !!null 
+  - - 2
+    - 2
+    - ''
+    - 14.95
+    - !!null 
+    - !!null 
+    - !!null 
+    - !!null 
+    - !!null 
+    - true
+    - 0
+    - !!null 
+    - !!null 
+  - - 3
+    - 3
+    - ''
+    - 16.95
+    - !!null 
+    - !!null 
+    - !!null 
+    - !!null 
+    - !!null 
+    - true
+    - 0
+    - !!null 
+    - !!null 
+  - - 4
+    - 4
+    - ''
+    - 18.95
+    - !!null 
+    - !!null 
+    - !!null 
+    - !!null 
+    - !!null 
+    - true
+    - 0
+    - !!null 
+    - !!null 
+
+---
+spree_product_groups:
+  columns:
+  - id
+  - name
+  - permalink
+  - order
+  records: 
+  - - 1
+    - Dog Bowls
+    - dog-bowls
+    - !!null 
+
+---
+spree_product_scopes:
+  columns:
+  - id
+  - product_group_id
+  - name
+  - arguments
+  records: 
+  - - 1
+    - 1
+    - in_name
+    - ! '---
+
+      - Dog Bowl
+
+'
+  - - 2
+    - 1
+    - ascend_by_updated_at
+    - ! '--- []
+
+'
+
+---
+spree_product_groups_products:
+  columns:
+  - product_id
+  - product_group_id
+  records: 
+  - - 1
+    - 1
+  - - 2
+    - 1
+  - - 3
+    - 1
+  - - 4
+    - 1
