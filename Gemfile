@@ -18,7 +18,7 @@ end
 
 gem 'jquery-rails'
 gem 'haml-rails'
-gem 'tinymce-rails'
+gem 'tinymce-rails', :git => 'https://github.com/spohlenz/tinymce-rails.git', :branch => 'master'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
