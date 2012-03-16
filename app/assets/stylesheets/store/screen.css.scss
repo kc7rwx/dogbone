@@ -29,7 +29,7 @@ $ff_base:       'Ubuntu', sans-serif;
   |--------------------------------------
   |- Navigation                         
   |                                    */
-      $header_navigation_font_size:           14px;
+      $header_navigation_font_size:           12px;
       $horizontal_navigation_font_size:       16px;
       $main_navigation_header_font_size:      14px;
       $main_navigation_font_size:             12px;
@@ -52,8 +52,8 @@ $ff_base:       'Ubuntu', sans-serif;
   |                                  */
       $heading_font_size:                     24px;
       $sub_heading_font_size:                 14px;
-      $button_font_size:                      12px;
-      $input_box_font_size:                   13px;
+      $button_font_size:                      10px;
+      $input_box_font_size:                   11px;
       $base_font_size:                        12px;
 
 /*--------------------------------------*/
@@ -156,7 +156,13 @@ mark {background-color: $link_text_color; color: $layout_background_color; font-
     padding: 2px 5px;    
     font-family: $ff_base;
     font-size: $input_box_font_size;
-
+    -webkit-border-radius: 3px;
+     -khtml-border-radius: 3px;
+       -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+         -o-border-radius: 3px;
+            border-radius: 3px;
+            
     &:active, &:focus {
       border-color: $link_text_color;;
       outline: none;
@@ -205,12 +211,12 @@ mark {background-color: $link_text_color; color: $layout_background_color; font-
        -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.4);
          -o-box-shadow: inset 0 1px 0 rgba(255,255,255,0.4);
             box-shadow: inset 0 1px 0 rgba(255,255,255,0.4);
-    -webkit-border-radius: 0px;
-     -khtml-border-radius: 0px;
-       -moz-border-radius: 0px;
-        -ms-border-radius: 0px;
-         -o-border-radius: 0px;
-            border-radius: 0px;
+    -webkit-border-radius: 3px;
+     -khtml-border-radius: 3px;
+       -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+         -o-border-radius: 3px;
+            border-radius: 3px;
     vertical-align:  text-top;
 
     &.large {
@@ -296,8 +302,8 @@ mark {background-color: $link_text_color; color: $layout_background_color; font-
   /* Navigation
   /*--------------------------------------*/
   nav#top-nav-bar {
-    text-align: right;
-    margin-top: 20px;
+    text-align: left;
+    margin-top: 4px;
 
     ul {
       li {
@@ -442,7 +448,18 @@ mark {background-color: $link_text_color; color: $layout_background_color; font-
   /* Main search bar
   /*--------------------------------------*/
   #search-bar {
-    display: block;
+    display: inline-block;
+    
+    form {
+      input#keywords{
+        font-size: 11px;
+      }
+      input[type="submit"]{
+        font-size: 10px;
+        margin-top: -3px;
+        padding: 2px 5px;
+      }
+    }
   }
 
   /*--------------------------------------*/
@@ -1020,7 +1037,7 @@ mark {background-color: $link_text_color; color: $layout_background_color; font-
     #search-bar {
       display: block;
       text-align: center;
-
+      
       select {
         margin-bottom: 10px;
       }
