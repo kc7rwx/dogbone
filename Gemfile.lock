@@ -1,4 +1,12 @@
 GIT
+  remote: git://github.com/joneslee85/spree-heroku.git
+  revision: 63f0cfa47089cae50365e226ec7dd1eccde0ac05
+  specs:
+    spree_heroku (1.0)
+      aws-sdk (~> 1.3.4)
+      spree_core (>= 0.70.0)
+
+GIT
   remote: git://github.com/spree/spree_editor.git
   revision: 309d88dfd80d80c478e25f453367889faafaac22
   branch: master
@@ -302,6 +310,7 @@ DEPENDENCIES
   sass-rails
   spree!
   spree_editor!
+  spree_heroku!
   spree_skrill!
   spree_static_content!
   spree_usa_epay!

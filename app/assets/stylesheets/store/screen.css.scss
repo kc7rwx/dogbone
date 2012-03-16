@@ -69,7 +69,7 @@ body {
 
 /* Line style */
 hr {
-  border-color: lighten($body_text_color, 60);
+  border-color: darken($body_text_color, 60);
 }
 
 /* Custom text-selection colors (remove any text shadows: twitter.com/miketaylr/status/12228805301) */
