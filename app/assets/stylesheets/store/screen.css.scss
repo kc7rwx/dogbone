@@ -1193,3 +1193,12 @@ mark {background-color: $link_text_color; color: $layout_background_color; font-
     }
         
   }
+  
+  // My custom attributes
+  header#header{
+    margin-bottom: 0;
+  }
+  div#banner{
+    margin-left: 10%;
+    margin-top: 10px;
+  }
