@@ -16,3 +16,6 @@
 
 # Ignore precomiled assets
 /public/assets/
+
+# Ignore KDE created files
+/.directory
