@@ -41,6 +41,7 @@ end
 group :development do
   gem 'rails-erd'
   gem 'pry'
+  gem 'diffy'
 end
 
 gem 'spree', :git => 'https://github.com/spree/spree.git'

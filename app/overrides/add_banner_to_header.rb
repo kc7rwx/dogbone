@@ -8,8 +8,15 @@ Deface::Override.new(:virtual_path => 'spree/static_content/show',
                      :remove => 'h1')
                      
 Deface::Override.new(:virtual_path => 'spree/static_content/show',
-                     :name => 'insert_page_title',
+                     :name => 'insert_page_title_for_static_content',
                      :insert_after => '#page_content',
                      :text => "<% content_for :banner do %>
                               <h1><%= @page.title %></h1>
+                              <% end %>")
+
+Deface::Override.new(:virtual_path => 'spree/products/index',
+                     :name => 'insert_page_title_for_products_index',
+                     :insert_after => "[data-hook='homepage_products']",
+                     :text => "<% content_for :banner do %>
+                              <h1>Products</h1>
                               <% end %>")

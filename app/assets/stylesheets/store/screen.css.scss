@@ -256,7 +256,7 @@ mark {background-color: $link_text_color; color: $layout_background_color; font-
   /*--------------------------------------*/
   footer#footer {
     padding: 10px 0;
-    border-top: 1px solid lighten($body_text_color, 60);
+    border-top: none;
   }
 
   /*--------------------------------------*/
@@ -1201,4 +1201,44 @@ mark {background-color: $link_text_color; color: $layout_background_color; font-
   div#banner{
     margin-left: 10%;
     margin-top: 10px;
+  }
+  body{
+  }
+  
+  .background{
+    background-image: linear-gradient(bottom, rgb(72,83,43) 13%, rgb(255,255,255) 27%);
+    background-image: -o-linear-gradient(bottom, rgb(72,83,43) 13%, rgb(255,255,255) 27%);
+    background-image: -moz-linear-gradient(bottom, rgb(72,83,43) 13%, rgb(255,255,255) 27%);
+    background-image: -webkit-linear-gradient(bottom, rgb(72,83,43) 13%, rgb(255,255,255) 27%);
+    background-image: -ms-linear-gradient(bottom, rgb(72,83,43) 13%, rgb(255,255,255) 27%);
+    
+    background-image: -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      color-stop(0.13, rgb(72,83,43)),
+      color-stop(0.27, rgb(255,255,255))
+    );
+  }
+  .container{
+    background: white;
+    border-radius: 0px 0px 10px 10px; 
+    -moz-border-radius: 0px 0px 10px 10px; 
+    -webkit-border-radius: 0px 0px 10px 10px; 
+    border: 0px solid #FFFFFF;
+  }
+  body{
+    background: #48532b;
+  }
+  li.not{
+    height: 80px;
+    margin: 5px;
+    text-align: center;
+    background-image: url('/assets/bone.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    a{
+      vertical-align: middle;
+    }
   }
