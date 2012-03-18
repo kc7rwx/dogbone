@@ -18,4 +18,4 @@
 /public/assets/
 
 # Ignore KDE created files
-/.directory
+# /.directory
