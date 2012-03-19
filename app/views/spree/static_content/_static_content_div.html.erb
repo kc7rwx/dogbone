@@ -1,0 +1,6 @@
+<% page_uri = Rails.application.routes.named_routes[:spree].path.spec.to_s == '/' ? page.slug : Rails.application.routes.named_routes[:spree].path.spec.to_s + page.slug %>
+<div class="sidebar-nav">
+	<a href="<%= page_uri %>">
+		<span><%= page.title %></span>
+	</a>	
+</div>

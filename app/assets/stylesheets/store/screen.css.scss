@@ -33,6 +33,7 @@ $ff_base:       'Ubuntu', sans-serif;
       $horizontal_navigation_font_size:       16px;
       $main_navigation_header_font_size:      14px;
       $main_navigation_font_size:             12px;
+      $sidebar_navigation_font_size:          16px;
 /*|------------------------------------
   |- Product Listing                         
   |                                  */
@@ -1230,15 +1231,24 @@ mark {background-color: $link_text_color; color: $layout_background_color; font-
   body{
     background: #48532b;
   }
-  li.not{
-    height: 80px;
-    margin: 5px;
-    text-align: center;
-    background-image: url('/assets/bone.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    display: block;
-    a{
-      vertical-align: middle;
+  nav#sidebar-pages-menu{
+    div.sidebar-nav{
+      background-image: url("/assets/bone.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      text-align: center;
+      margin: 10px;
+      opacity: 1;
+      span{
+        font-size: $sidebar_navigation_font_size;
+        display: block;
+        position:relative;
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
     }
+    div.sidebar-nav:hover{
+        opacity: .88
+    }  
   }
