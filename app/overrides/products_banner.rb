@@ -9,5 +9,5 @@ Deface::Override.new(:virtual_path => 'spree/products/show',
                      :text => "<%= render 'shared/banner_content', :heading => @product.name, :sub_heading => @product.sub_heading %>")
 
 Deface::Override.new(:virtual_path => 'spree/products/show',
-                     :name => 'remove_title_from_product'
+                     :name => 'remove_title_from_product',
                      :remove => '.product-title')
