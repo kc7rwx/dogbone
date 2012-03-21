@@ -45,8 +45,9 @@ group :development do
 end
 
 gem 'spree', :git => 'https://github.com/spree/spree.git'
-gem 'spree_usa_epay', :git => 'git://github.com/spree/spree_usa_epay.git'
-gem 'spree_skrill', :git => 'git://github.com/spree/spree_skrill.git', :ref => '37e6159aa71ec053499e2c7aa9cf799a3b3bdb39'
+# gem 'spree_usa_epay', :git => 'git://github.com/spree/spree_usa_epay.git'
+# gem 'spree_skrill', :git => 'git://github.com/spree/spree_skrill.git', :ref => '37e6159aa71ec053499e2c7aa9cf799a3b3bdb39'
+gem 'spree_gateway', :git => 'git://github.com/spree/spree_gateway.git'
 gem 'spree_static_content', :git => 'git://github.com/spree/spree_static_content.git', :ref => 'be91eb52b0bad285dcaff6602a392e45b5e07fbd'
 gem 'spree_editor', :git => 'git://github.com/spree/spree_editor.git', :branch => 'master'
 gem 'yaml_db', '0.2.2'
