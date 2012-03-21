@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120219020344) do
+ActiveRecord::Schema.define(:version => 20120321033730) do
 
   create_table "spree_activators", :force => true do |t|
     t.string   "description"
@@ -249,6 +249,7 @@ ActiveRecord::Schema.define(:version => 20120219020344) do
     t.string   "layout"
     t.boolean  "show_in_sidebar",  :default => false, :null => false
     t.string   "meta_title"
+    t.string   "sub_heading"
   end
 
   add_index "spree_pages", ["slug"], :name => "index_pages_on_slug"
@@ -353,6 +354,7 @@ ActiveRecord::Schema.define(:version => 20120219020344) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "count_on_hand",        :default => 0,  :null => false
+    t.string   "sub_heading"
   end
 
   add_index "spree_products", ["available_on"], :name => "index_products_on_available_on"
